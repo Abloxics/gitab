@@ -1,9 +1,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^build\index\.html$ - [L]
+  Redirect  build/to/index/file/index.html
+  RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /build/index.html [L]
+  RewriteRule . /index.html [L]
 </IfModule>
