@@ -1,6 +1,6 @@
 RewriteEngine on
 RewriteBase /
-RewriteRule ^build/(.*)$ /build [R=301,L]
+RewriteRule ^build/(index.html*)$ /build [R=301,L]
 # BEGIN LSCACHE ## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this
 block! ##
 <IfModule LiteSpeed>
